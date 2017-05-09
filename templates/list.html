@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>User Story Manager</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>
+                ID
+            </th>
+            <th>
+                Story title
+            </th>
+            <th>
+                User story
+            </th>
+            <th>
+                Acceptance criteria
+            </th>
+            <th>
+                Business value
+            </th>
+            <th>
+                Estimation
+            </th>
+            <th>
+                Status
+            </th>
+        </tr>
+        {% for list in story_list %}
+        <tr>
+            {%for item in list%}
+            <td>{{item}}</td>
+            <td>{{item}}</td>
+            <td>{{item}}</td>
+            <td>{{item}}</td>
+            <td>{{item}}</td>
+            <td>{{item}}</td>
+            <td>{{item}}</td>
+            {%endfor%}
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
